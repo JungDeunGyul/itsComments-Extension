@@ -1,7 +1,7 @@
 function removeElementsByClass(className) {
   const elements = document.getElementsByClassName(className);
 
-  if (elements.length >= 1) {
+  while (elements.length > 0) {
     elements[0].remove();
   }
 }
@@ -100,7 +100,9 @@ function handleMouseMove(event) {
 
   const isOverModal = document.querySelector(".shadowHost:hover");
 
-  if (!isOverModal) {
+  const modals = document.querySelectorAll(".shadowHost");
+
+  if (!isOverModal && modals.length === 0) {
     const existingCursor = document.querySelector(".custom-cursor");
 
     if (existingCursor) {
@@ -414,12 +416,6 @@ function openModal(x, y, userFriendsList, userEmail, userNickname) {
     document.body.style.cursor = "auto";
     document.removeEventListener("mousemove", handleMouseMove);
   });
-
-  if (userEmail === "itscomments16@gmail.com") {
-    friendsDropdown.style.display = "none";
-    allowPublic.style.display = "none";
-    addEmailButton.style.display = "none";
-  }
 
   topContainer.appendChild(nicknameDisplay);
   topContainer.appendChild(allowPublic);
