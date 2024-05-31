@@ -217,6 +217,11 @@ async function popAlarm() {
 
   const userFriends = await new Promise((resolve) => {
     chrome.storage.local.get(["userData"], (result) => {
+      if (!result || !result.userData || !result.userData.friends) {
+        resolve([]);
+        return;
+      }
+
       resolve(result.userData.friends);
     });
   });
