@@ -1,7 +1,7 @@
 # its Comments
 
 <p align="center">
-  <img width="200" alt="logo" src="./public/icon.png">
+  <img width="300" alt="logo" src="./public/logo.png">
 </p>
 
 ### 어디에서든 댓글을 작성하고 해당 댓글을 손쉽게 공유할 수 있는 크롬 익스텐션 서비스 입니다.
@@ -18,28 +18,28 @@
 
 # 📕 Contents
 
-- [💪 Motivation](#💪-motivation)
-- [🛠 Tech Stacks](#🛠-tech-stacks)
+- [💪 Motivation](#-motivation)
+- [🛠 Tech Stacks](#-tech-stacks)
   1. [Why Chrome Extension?](#why-chrome-extension)
   2. [How Chrome Extension Work?](#how-chrome-extension-work)
   3. [Why SSE?](#why-sse)
   - 1 [연결 및 해제 비용](#1-연결-및-해제-비용)
   - 2 [배터리 소모량](#2-배터리-소모량)
   - 3 [Chrome 익스텐션 환경](#3-chrome-익스텐션-환경)
-- [💾 Features](#💾-features)
-- [🤫 Pain point](#🤫-pain-point)
+- [💾 Features](#-features)
+- [🤫 Pain point](#-pain-point)
   1. [비회원 댓글을 한시간 뒤에 어떻게 삭제할까?](#1-비회원-댓글을-한시간-뒤에-어떻게-삭제할까)
   - [UseQuery를 사용한 클라이언트 측 자동 삭제](#1-usequery를-사용한-클라이언트-측-자동-삭제)
   - [서버 측 Cron 작업을 이용한 삭제](#2-서버-측-cron-작업을-이용한-삭제)
   - [MongoDB의 TTL(Time-To-Live) 기능을 활용한 자동 삭제](#3-mongodb의-ttltime-to-live-기능을-활용한-자동-삭제)
   2. [이미지를 어떻게 처리해 줄까?](#2-이미지를-어떻게-처리해-줄까)
-- [📑 Challenges](#📑-challenges)
+- [📑 Challenges](#-challenges)
   - [일관 되지 않은 스타일](#일관-되지-않은-스타일)
   - [해결방법: Shadow DOM 사용](#해결방법-shadow-dom-사용)
   - [Shadow DOM의 closed 속성](#shadow-dom의-closed-속성)
-- [👨🏻‍🏫 Memoir](#👨🏻‍🏫-memoir)
+- [👨🏻‍🏫 Memoir](#👨🏻-memoir)
 
-<br></br>
+<br>
 
 # **💪 Motivation**
 
@@ -54,7 +54,7 @@
 
 저희는 이러한 번거로운 작업들을 간소화하고자, 이 프로젝트를 기획하게 되었습니다.
 
-<br></br>
+<br>
 
 # **🛠 Tech Stacks**
 
@@ -249,7 +249,7 @@ commentSchema.pre("save", async function (next) {
         },
       );
     });
-
+  }
     const encodeScreenshot = btoa(screenshot);
 ```
 

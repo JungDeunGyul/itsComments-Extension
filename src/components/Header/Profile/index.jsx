@@ -14,17 +14,18 @@ function Profile() {
 
   return (
     <div className="flex items-center text-xl font-bold border-gray-300 drop-shadow-lg">
-      <button onClick={() => setModalOpen(true)}>
+      <button className="mr-3 ml-2" onClick={() => setModalOpen(true)}>
         <img
-          className="h-12 w-12 mt-6 ml-3 drop-shadow-lg object-cover rounded-full p-[3px] hover:bg-slate-200"
+          className="h-12 w-12 mt-6 rounded-full p-[3px] hover:bg-slate-200 cursor-pointer"
           src={userData.icon}
+          alt="User Icon"
         />
       </button>
       <button
-        className="p-2 mt-6 ml-auto mr-5 text-white border border-solid rounded-md text-balance hover:bg-gray-400"
+        className="p-2 mt-6 text-white border border-solid rounded-md text-balance hover:bg-gray-400 mr-5 cursor-pointer"
         onClick={openWebPage}
       >
-        Open itsComment Web
+        Open addComment Web
       </button>
       {isModalOpen &&
         createPortal(

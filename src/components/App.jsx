@@ -14,7 +14,7 @@ function App() {
 
   const SERVER_URL = import.meta.env.VITE_SERVER_URL;
   const CLIENT_URL = import.meta.env.VITE_CLIENT_URL;
-  const NON_MEMBER = import.meta.env.VITE_NON_MEMBER_ID;
+  const NON_MEMBER = import.meta.env.VITE_NON_MEMBER;
 
   chrome.storage.local.set({ SERVER_URL, CLIENT_URL, NON_MEMBER });
 
