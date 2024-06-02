@@ -417,6 +417,12 @@ function openModal(x, y, userFriendsList, userEmail, userNickname) {
     document.removeEventListener("mousemove", handleMouseMove);
   });
 
+  if (userEmail === "addcomments28@gmail.com") {
+    friendsDropdown.style.display = "none";
+    allowPublic.style.display = "none";
+    addEmailButton.style.display = "none";
+  }
+
   topContainer.appendChild(nicknameDisplay);
   topContainer.appendChild(allowPublic);
 
