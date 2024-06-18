@@ -507,15 +507,13 @@ commentSchema.pre("save", async function (next) {
 ---
 
 <div style="text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: flex-end;">
-    <div style="margin-right: 20px;">
-      <img src="./public/s3_only.png" width="350">
-      <p><strong>s3만 적용</strong></p>
-    </div>
-    <div>
-      <img src="./public/s3_cloudfront.png" width="350">
-      <p><strong>cloudfront 적용</strong></p>
-    </div>
+  <div style="display: inline-block; margin-right: 20px;">
+    <img src="./public/s3_only.png" width="350">
+    <p><strong>s3만 적용</strong></p>
+  </div>
+  <div style="display: inline-block;">
+    <img src="./public/s3_cloudfront.png" width="350">
+    <p><strong>cloudfront 적용</strong></p>
   </div>
 </div>
 
