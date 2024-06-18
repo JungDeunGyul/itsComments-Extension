@@ -506,15 +506,8 @@ commentSchema.pre("save", async function (next) {
 ### S3만 사용 vs CloudFront 적용 비교
 ---
 
-<div style="text-align: center;">
-  <div style="display: inline-block; margin-right: 20px;">
-    <img src="./public/s3_only.png" width="350">
-    <p><strong>s3만 적용</strong></p>
-  </div>
-  <div style="display: inline-block;">
-    <img src="./public/s3_cloudfront.png" width="350">
-    <p><strong>cloudfront 적용</strong></p>
-  </div>
+<div align="center">
+  <img src="./public/s3_cloudfront.png" width="350" height="200">
 </div>
 
 **S3만 사용하는 경우 장단점**
