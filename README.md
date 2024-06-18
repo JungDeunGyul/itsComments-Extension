@@ -506,7 +506,7 @@ commentSchema.pre("save", async function (next) {
 ### S3만 사용 vs CloudFront 적용 비교
 ---
 
-<div align="center">
+<div style="text-align: center;">
   <div style="display: flex; justify-content: center; align-items: flex-end;">
     <div style="margin-right: 20px;">
       <img src="./public/s3_only.png" width="350">
